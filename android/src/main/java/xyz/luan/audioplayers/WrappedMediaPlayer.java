@@ -27,10 +27,12 @@ public class WrappedMediaPlayer extends Player implements MediaPlayer.OnPrepared
 
     private MediaPlayer player;
     private AudioplayersPlugin ref;
+    private AudioManager audioManager;
 
     WrappedMediaPlayer(AudioplayersPlugin ref, String playerId) {
         this.ref = ref;
         this.playerId = playerId;
+//        (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
     }
 
     /**
